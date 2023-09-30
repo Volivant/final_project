@@ -1,0 +1,46 @@
+@import url('../colors.css');
+@import url('../fonts.css');
+
+.base-btn {
+    height: 60px;
+    width: 380px;
+    position: relative;
+    padding: 0;
+    background-color: var(--color-secondary-blue);
+    border: none;
+    border-radius: 5px;
+    color: var(--color-primary-white);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+  
+.base-btn:hover {
+    background-color: var(--color-secondary-green);
+}
+  
+.base-btn[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.base-btn.active {
+    background-color: var(--color-secondary-green);
+    border: 1px solid var(--color-secondary-green);
+    box-shadow: 0px 0 2px 0px #C0C0C0;
+}
+
+.current-btn {
+    color: black;
+    background-color: var(--color-primary-grey);
+    border: 1px solid var(--color-primary-grey);
+    box-shadow: 0px 0 2px 0px #C0C0C0;
+}
+
+.hidden-btn{
+    display: none;
+}

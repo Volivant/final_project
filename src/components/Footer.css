@@ -1,0 +1,40 @@
+@import url('../colors.css');
+@import url('../fonts.css');
+
+footer {
+    background-color: var(--color-primary);
+    height: 140px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 45px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.footer-left {
+    background: url('./img/logo_footer_big.svg');
+    width: 140px;
+    height: 140px;
+    justify-self: start;
+}
+
+.footer-right {
+    justify-self: end;
+    text-align: right;
+    color: var(--color-primary-white);
+    font-size: 14px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        padding: 0 20px;
+    }
+    .footer-left {
+        background: url('./img/logo_footer_small.svg');
+        width: 110px;
+        height: 110px;
+        
+    }
+}

@@ -1,0 +1,9 @@
+.slick-prev {
+    left: -185px;
+}
+
+@media only screen and (max-width: 500px) {
+    .slick-prev {
+        left: -35px;
+    }
+}

@@ -1,0 +1,43 @@
+.login-group {
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 60% auto;
+    gap: 10px;
+}
+
+.login-title {
+    padding: 5px 40px;
+}
+
+.login-img {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+@media only screen and (max-width: 500px) {
+    .login-title {
+        padding: 5px 15px;
+    }
+
+    .login-group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    .login-img {
+        order: 3;
+    }
+    
+    .login-container {
+        order: 2;
+    }
+}

@@ -1,0 +1,159 @@
+.tariff-card-container {
+    width: 415px;
+    height: 540px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    
+    background: var(--color-primary-white);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.tariff-card-header {
+    height: 130px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 30px;
+}
+
+.tariff-card-header-title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3px
+}
+
+.tariff-card-header-text {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.tariff-card-header-img {
+    position: relative;
+    z-index: 1;
+    width: 90px;
+    top: -80px;
+    left: 280px;
+}
+
+.tariff-card-header-img-svg {
+    width: 90px;
+    height: 90px;
+}
+
+.card-beginner {
+    background-color: var(--color-secondary-red);
+}
+
+.card-pro {
+    background-color: var(--color-secondary-green);
+}
+
+.card-business {
+    background-color: var(--color-primary-black);
+    color: #FFF;
+}
+
+.tariff-card-current {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    padding: 10px;
+}
+
+.not-visisble {
+    visibility: hidden;
+}
+
+.tariff-card-current-active {
+    display: flex;
+    color: #FFF;
+    font-size: 14px;
+    width: 134px;
+    height: 24px;
+    border-radius: 10px;
+    background: #3BA5E0;
+    justify-content: center;
+    align-content: center;
+}
+
+.tariff-card-price {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tariff-card-price-low {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.tariff-card-price-high {
+    font-size: 25px;
+    text-decoration-line:line-through;
+    opacity: 0.5;
+}
+
+.tariff-card-price-month {
+    font-size: 17px;
+}
+
+.tariff-detail {
+    padding: 60px 30px;
+}
+
+.tariff-detail-title {
+    font-size: 20px;
+}
+
+.tariff-detail-list {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+ul {
+    list-style-image: url(icons/list_icon.svg);
+}
+
+.base-btn {
+    width: 355px;
+}
+
+.tariff-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .tariff-card-container {
+        width: 335px;
+        height: 512px;
+    }
+
+    .tariff-card-header {
+        padding: 20px;
+    }
+
+    .tariff-card-header-img {
+        top: -80px;
+        left: 250px;
+    }
+    
+    .tariff-card-header-img-svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tariff-detail-list {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .base-btn {
+        width: 290px;
+    }
+
+    .tariff-detail {
+        padding: 30px 30px;
+    }
+}

@@ -1,0 +1,124 @@
+.search-result-container {
+    margin: 40px 45px;
+}
+
+.search-result-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-result-title-content {
+    margin-bottom: 36px;
+}
+
+.search-result-report-total {
+    font-size: 18px;
+    color: var(--color-primary-grey-text);
+}
+
+.search-result-carousel-container {
+    border-radius: 10px;
+    border: 2px solid var(--color-primary);
+    height: 162px;
+}
+
+.search-result-carousel-header {
+    padding: 15px 0;
+    font-size: 20px;
+    width: 133px;
+    height: 158px;
+    flex-shrink: 0;
+    color: var(--color-primary-white);
+    border-radius: 10px 0px 0px 10px;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-result-carousel-main{
+    margin-left: 150px;
+    position: relative;
+    top: -140px;
+    
+}
+
+.search-result-carousel-main-loader{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 120px;
+}
+
+.search-result-doc {
+    margin: 100px 0 50px 0;
+}
+
+.search-result-doc-title{
+    margin-bottom: 58px;
+}
+
+.search-result-doc-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+    .search-result-container {
+        margin: 20px;
+    }
+    
+    .search-result-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .search-result-title-content {
+        margin-bottom: 36px;
+    }
+    
+    .search-result-report-total {
+        font-size: 18px;
+        color: var(--color-primary-grey-text);
+    }
+
+    .search-result-carousel-container {
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+        height: 140px;
+        width: 298px;
+        margin-left: 10px;
+    }
+    
+    .search-result-carousel-header {
+        font-size: 18px;
+        width: 298px;
+        height: 75px;
+        flex-shrink: 0;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .search-result-carousel-main{
+        margin-left: 0;
+        position: relative;
+        top: 0px;
+    }
+    
+    .search-result-doc {
+        margin: 60px 0 50px 0;
+    }
+    
+    .search-result-doc-title{
+        margin-bottom: 58px;
+    }
+    
+    
+    
+}
