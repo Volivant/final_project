@@ -1,5 +1,6 @@
 {
   "name": "scan-search",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +16,7 @@
     "react-loading": "^2.0.3",
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "react-tabs": "^6.0.2",
     "react-xml-viewer": "^2.0.0",
@@ -51,4 +52,5 @@
   "devDependencies": {
     "redux-devtools-extension": "^2.13.9"
   }
+  
 }

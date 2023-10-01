@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+// import { RouterProvider as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -19,26 +19,27 @@ import { useSelector } from "react-redux";
 function App() {
     const user = useSelector(store => store);
     return (
-        <div className="App">
-            <Router>
-                <header>
-                    <Navbar user = { user }/>
-                </header>
-                <main>
-                    <Routes>
-                        <Route path='/' element = {<Home user = { user }/>} /> 
-                        <Route path='/tariffs' element = {<Tariffs />} />
-                        <Route path='/faq' element = {<Faq />} />
-                        <Route path='/register' element = {<Register />} />
-                        <Route path='/login' element = {<Login  user = { user }/>} />
-                        <Route path='/search' element = {<Search user = { user } />}/>
-                        <Route path='/search-result' element = {<SearchResult user = { user } />}/>
-                    </Routes>                
-                </main>
-            </Router>
-            <Footer />
-        </div>
-        
+        <Router>
+            <div className="App">
+                
+                    <header>
+                        <Navbar user = { user }/>
+                    </header>
+                    <main>
+                        <Routes>
+                            <Route exact path='/' element = {<Home user = { user }/>} /> 
+                            <Route path='/tariffs' element = {<Tariffs />} />
+                            <Route path='/faq' element = {<Faq />} />
+                            <Route path='/register' element = {<Register />} />
+                            <Route path='/login' element = {<Login  user = { user }/>} />
+                            <Route path='/search' element = {<Search user = { user } />}/>
+                            <Route path='/search-result' element = {<SearchResult user = { user } />}/>
+                        </Routes>                
+                    </main>
+                
+                <Footer />
+            </div>
+        </Router>
     );
 }
 

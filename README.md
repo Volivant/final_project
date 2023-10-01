@@ -8,3 +8,4 @@ react-slick
 react-loading
 react-tabs
 reduxjs/toolkit
+redux-thunk
