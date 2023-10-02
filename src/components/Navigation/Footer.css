@@ -1,5 +1,5 @@
-@import url('../colors.css');
-@import url('../fonts.css');
+@import url('../../colors.css');
+@import url('../../fonts.css');
 
 footer {
     background-color: var(--color-primary);
@@ -13,7 +13,7 @@ footer {
 }
 
 .footer-left {
-    background: url('./img/logo_footer_big.svg');
+    background: url('../img/logo_footer_big.svg');
     width: 140px;
     height: 140px;
     justify-self: start;
@@ -27,12 +27,13 @@ footer {
     align-self: center;
 }
 
+
 @media only screen and (max-width: 500px) {
     footer {
         padding: 0 20px;
     }
     .footer-left {
-        background: url('./img/logo_footer_small.svg');
+        background: url('../img/logo_footer_small.svg');
         width: 110px;
         height: 110px;
         

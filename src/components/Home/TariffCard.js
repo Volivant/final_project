@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import BaseBtn from "./BaseBtn";
+import BaseBtn from "../BaseBtn/BaseBtn";
 
 import "./TariffCard.css";
 
-import BeginnerImg from "./img/tariff_beginner.svg";
-import ProImg from "./img/tariff_pro.svg";
-import BusinessImg from "./img/tariff_business.svg";
+import BeginnerImg from "../img/tariff_beginner.svg";
+import ProImg from "../img/tariff_pro.svg";
+import BusinessImg from "../img/tariff_business.svg";
 
 
 

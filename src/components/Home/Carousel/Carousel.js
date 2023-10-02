@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import CarouselCard from "./CarouselCard";
-import CardImgSpeed from "./img/carusel_speed.svg";
-import CardImgBase from "./img/carusel_base.svg";
-import CardImgGuard from "./img/carusel_guard.svg";
+import CardImgSpeed from "../../img/carusel_speed.svg";
+import CardImgBase from "../../img/carusel_base.svg";
+import CardImgGuard from "../../img/carusel_guard.svg";
 
 import "./Carousel.css";
 

@@ -3,7 +3,7 @@ import LoginForm from "./LoginForm";
 
 import "./Login.css";
 
-import loginImg from './img/people_key.svg'; //подключаем картинку
+import loginImg from '../img/people_key.svg'; //подключаем картинку
 
 
 const Login = ({ user }) => {

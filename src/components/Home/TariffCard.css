@@ -2,7 +2,7 @@
     width: 415px;
     height: 540px;
     border-radius: 10px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     
     background: var(--color-primary-white);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
@@ -111,7 +111,7 @@
 }
 
 ul {
-    list-style-image: url(icons/list_icon.svg);
+    list-style-image: url(../icons/list_icon.svg);
 }
 
 .base-btn {
@@ -122,6 +122,40 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .tariff-card-container {
+        width: 335px;
+        height: 512px;
+    }
+
+    .tariff-card-header {
+        padding: 20px;
+    }
+
+    .tariff-card-header-img {
+        top: -80px;
+        left: 250px;
+    }
+    
+    .tariff-card-header-img-svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tariff-detail-list {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .base-btn {
+        width: 290px;
+    }
+
+    .tariff-detail {
+        padding: 30px 30px;
+    }
 }
 
 @media only screen and (max-width: 500px) {

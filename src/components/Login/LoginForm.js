@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import BaseBtn from "./BaseBtn";
+import BaseBtn from "../BaseBtn/BaseBtn";
 
 import "./LoginForm.css";
-import logoLock from './img/lock.svg'; //подключаем картинку
-import loginGoogle from './img/google.svg';
-import loginFacebook from './img/facebook.svg';
-import loginYandex from './img/yandex.svg';
+import logoLock from '../img/lock.svg'; //подключаем картинку
+import loginGoogle from '../img/google.svg';
+import loginFacebook from '../img/facebook.svg';
+import loginYandex from '../img/yandex.svg';
 
 import { useDispatch } from "react-redux";
-import { userAuth } from "../store/actions/authActions";
+import { userAuth } from "../../store/actions/authActions";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = ({ user }) => {

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-import BaseBtn from "./BaseBtn";
+import BaseBtn from "../BaseBtn/BaseBtn";
 
 import "./Search.css";
-import imgDoc from './img/document.svg';
-import imgFolder from './img/folders.svg';
-import imgRocket from './img/rocket.svg';
+import imgDoc from '../img/document.svg';
+import imgFolder from '../img/folders.svg';
+import imgRocket from '../img/rocket.svg';
 
-import { setSearchConfig } from '../store/actions/dataActions';
+import { setSearchConfig } from '../../store/actions/dataActions';
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

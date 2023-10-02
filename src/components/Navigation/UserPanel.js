@@ -1,12 +1,12 @@
 import React from "react";
-import Loader from "./Loader";
+import Loader from "../Loader";
 import { useDispatch } from "react-redux";
-import { userLogout } from "../store/actions/authActions";
+import { userLogout } from "../../store/actions/authActions";
 import { useNavigate } from "react-router-dom";
 import "./UserPanel.css";
 
 
-import UserAvatar from "./img/avatar-boy-svgrepo-com.svg"
+import UserAvatar from "../img/avatar-boy-svgrepo-com.svg"
 
 const UserPanel = ({ user }) => {
     const { userName, isAuth, usedCompanyCount, companyLimit, loadingUser } = user;

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-import BaseBtn from "./BaseBtn";
-import Loader from "./Loader";
-import SearchResultDocCard from "./SearchResultDocCard";
-import imgSearchResult from "./img/search-result-img.svg";
+import BaseBtn from "../BaseBtn/BaseBtn";
+import Loader from "../Loader";
+import SearchResultDocCard from "./SearchResultCarousel/SearchResultDocCard";
+import imgSearchResult from "../img/search-result-img.svg";
 
 import "./SearchResult.css";
 
-import SearchResultCarousel from "./SearchResultCarousel";
+import SearchResultCarousel from "./SearchResultCarousel/SearchResultCarousel";
 import { useDispatch } from "react-redux";
-import { loadReportPublications, loadDocuments } from '../store/actions/dataActions';
+import { loadReportPublications, loadDocuments } from '../../store/actions/dataActions';
 
 const SearchResult = ({ user }) => {
     const dispatch = useDispatch();

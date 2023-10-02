@@ -91,7 +91,7 @@
     width: 242px;
     height: 43px;
     appearance: none;
-    background-image: url("./icons/select.svg");
+    background-image: url("../icons/select.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 15px) center;
     outline: none;
@@ -103,11 +103,11 @@
     width: 176px;
     height: 43px;
     margin-right: 20px;
-    background: url("./icons/select.svg") no-repeat 85% 50%;
+    background: url("../icons/select.svg") no-repeat 85% 50%;
 }
 
 .search-input-range::-webkit-calendar-picker-indicator {
-    background: url("./icons/select.svg") no-repeat 90% 50%;
+    background: url("../icons/select.svg") no-repeat 90% 50%;
 }
 
 .search-check-container {
@@ -193,6 +193,30 @@
     align-self: flex-end;
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .search-form {
+        /* height: 550px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: var(--color-primary-white); 
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+        padding: 0px 45px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 872px;
+        z-index: 1; */
+        padding: 0px 20px;
+        width: 700px;
+    }
+    .search-input-range {
+        width: 136px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .search-container {
         padding: 20px 15px;
@@ -248,11 +272,11 @@
 
     .search-input-range {
         margin-bottom: 20px;
-        background: url("./icons/select.svg") no-repeat 95% 50%;
+        background: url("../icons/select.svg") no-repeat 95% 50%;
     }
 
     .search-input-range::-webkit-calendar-picker-indicator {
-        background: url("./icons/select.svg") no-repeat 85% 50%;
+        background: url("../icons/select.svg") no-repeat 85% 50%;
     }
 
     .search-check-container {

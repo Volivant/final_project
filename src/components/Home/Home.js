@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import BaseBtn from "./BaseBtn";
-import Carousel from "./Carousel"
+import BaseBtn from "../BaseBtn/BaseBtn";
+import Carousel from "./Carousel/Carousel"
 import TariffCard from "./TariffCard";
 
-import imgHomeFirst from './img/home1.svg';
-import imgHomeSecond from './img/home2.svg';
-import imgHomeThird from './img/home3.svg';
+import imgHomeFirst from '../img/home1.svg';
+import imgHomeSecond from '../img/home2.svg';
+import imgHomeThird from '../img/home3.svg';
 
 import "./home.css";
 
@@ -29,7 +29,7 @@ const Home = ({ user }) => {
         // Очищаем слушатель событий при размонтировании компонента
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-    slidesCount = (width <= 500) ? 1 : 3;
+    slidesCount = (width <= 768) ? 1 : 3;
     
     return (
         <div>

@@ -4,15 +4,15 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-import Navbar from './components/Navbar';
-import Home from './components/Home';
+import Navbar from './components/Navigation/Navbar';
+import Home from './components/Home/Home';
 import Tariffs from './components/Tariffs';
 import Faq from './components/Faq';
-import Login from './components/Login';
+import Login from './components/Login/Login';
 import Register from './components/Register';
-import Footer from './components/Footer';
-import Search from './components/Search';
-import SearchResult from './components/SearchResult';
+import Footer from './components/Navigation/Footer';
+import Search from './components/Search/Search';
+import SearchResult from './components/Search/SearchResult';
 
 import { useSelector } from "react-redux";
 

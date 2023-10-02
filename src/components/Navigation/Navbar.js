@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { ReactComponent as MobMenu} from "./icons/m_menu.svg"
-import { ReactComponent as MobClose} from "./icons/m_x.svg"
-import { ReactComponent as LogoBig } from "./img/logo_big.svg";
-import { ReactComponent as LogoFooterBig } from "./img/logo_footer_big.svg";
+import { ReactComponent as MobMenu} from "../icons/m_menu.svg"
+import { ReactComponent as MobClose} from "../icons/m_x.svg"
+import { ReactComponent as LogoBig } from "../img/logo_big.svg";
+import { ReactComponent as LogoFooterBig } from "../img/logo_footer_big.svg";
 import './Navbar.css'
 
 import UserPanel from "./UserPanel";

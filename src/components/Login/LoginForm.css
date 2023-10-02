@@ -1,4 +1,4 @@
-@import url('../colors.css');
+@import url('../../colors.css');
 
 .group-form {
     margin: 0;
@@ -126,6 +126,31 @@
 
 .react-tabs__tab-panel--selected {
     display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .group-form {
+        padding: 15px 15px;
+    }
+
+    .login-form {
+        width: 335px;
+    }
+
+    .login-lock {
+        top: 20px;
+        right: -50px;
+    }
+
+    .input {
+        width: 305px;
+        height: 40px;
+    }
+
+    .base-btn {
+        height: 60px;
+        width: 305px;
+    }
 }
 
 @media only screen and (max-width: 500px) {

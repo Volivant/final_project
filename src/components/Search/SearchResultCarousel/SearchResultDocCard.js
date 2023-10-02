@@ -1,5 +1,5 @@
 import React from "react";
-import BaseBtn from "./BaseBtn";
+import BaseBtn from "../../BaseBtn/BaseBtn";
 import "./SearchResultDocCard.css";
 
 
